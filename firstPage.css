@@ -1,0 +1,57 @@
+html {
+    /* Size of largest container or bigger */
+    min-width: 1200px;
+}
+
+
+body{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+img{
+	cursor:pointer;
+}
+
+#lighthouse{
+	position:absolute;
+	margin-left:705px;
+	margin-top:10px;
+	height:220px;
+}
+
+#credit{
+	position:absolute;
+	margin-left:800px;
+	margin-top:10px;
+	height:200px;
+
+}
+
+#secTower{
+	position:absolute;
+	margin-left:452px;
+	margin-top:169px;
+	height:100px;
+}
+
+#photoBook{
+	position:absolute;
+	margin-left:460px;
+	margin-top:20px;
+	height:150px;
+}
+
+#knight{
+	position:absolute;
+	margin-left:475px;
+	margin-top:415px;
+	height:100px;
+}
+
+#enter{
+	position:absolute;
+	margin-left:520px;
+	margin-top:415px;
+	height:100px;
+}

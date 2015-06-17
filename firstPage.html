@@ -1,0 +1,90 @@
+<head>
+	<title>Welcome To Tower Defence Game</title>
+
+	<!--User Scripts-->
+	<script type="text/javascript" src="FirstPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="FirstPage.css"></link>
+</head>
+<body background="/images/FirstPage/FirstPage-background.jpg">
+	<!-- the div for light house -->
+	<div style:="position: absolute;">
+		<img src="/images/FirstPage/lightHouse.png" id="lighthouse">
+		<img src="/images/FirstPage/credit.png"  id="credit">
+	</div>
+	<!-- the div for second tower -->
+	<div>
+		<a href="albumPage.html">
+			<img src="/images/FirstPage/2ndTower.png" id="secTower">
+		</a>
+		<img src="/images/FirstPage/photoBook.png" id="photoBook">
+		<!-- the following script is to hide and show photo book -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#photoBook').hide();
+				$('#secTower').hover(function(){
+					$('#photoBook').show();
+				},
+				function(){
+					$('#photoBook').hide();
+				});
+			});
+		</script>
+	</div>
+	<!-- the div for the knight -->
+	<div>
+		<a href="gamePage.html"><img src="../images/FirstPage/knight.png" id="knight"></a>
+		<img src="../images/FirstPage/enter.png" id="enter">
+	</div>
+
+
+	<!-- animation script -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//hide credit panel
+			$('#credit').hide();
+			//for the enlargement of the lighthouse
+			$('#lighthouse').hover(function(){
+				$('#lighthouse').height('250px');
+				$('#lighthouse').css('margin-left','995px');
+				$('#lighthouse').css('margin-top','-15px');
+				$('#credit').show();
+				},
+				function(){
+				$('#lighthouse').height('220px');
+				$('#lighthouse').css('margin-left','906px');
+				$('#lighthouse').css('margin-top','10px');
+				$('#credit').hide();
+			});
+
+			//for the enlargment of 2nd tower
+			$('#secTower').hover(function(){
+				$('#secTower').height('130px');
+				$('#secTower').css('margin-left','440px');
+				$('#secTower').css('margin-top','145px');
+				},
+				function(){
+				$('#secTower').height('100px');
+				$('#secTower').css('margin-left','452px');
+				$('#secTower').css('margin-top','169px');
+			});
+
+			//hide the enter when the page is loaded
+			$('#enter').hide();
+			//For the enlargement of Knight
+			$('#knight').hover(function(){
+					$('#knight').height('120px');
+					$('#knight').css('margin-left','470px');
+					$('#knight').css('margin-top','395px');
+					$('#enter').show();
+					
+				},
+				function(){
+					$('#knight').height('100px');
+					$('#knight').css('margin-left','475px');
+					$('#knight').css('margin-top','415px');
+					$('#enter').hide();
+				});
+		});
+
+	</script>
+</body>
